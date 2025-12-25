@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React with JSX in Browser</title>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone"></script> <!-- Babel compiler -->
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+            const [count, setCount] = React.useState(0);
+            return (
+                <div>
+                    <h1>Counter: {count}</h1>
+                    <button onClick={() => setCount(count + 1)}>Increase</button>
+                </div>
+            );
+        };
+
+        // Render the React app to the DOM
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+
+</body>
+</html>

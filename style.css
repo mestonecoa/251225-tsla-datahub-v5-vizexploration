@@ -1,0 +1,17 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin: 6px 0;
+}
+
